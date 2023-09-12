@@ -54,10 +54,7 @@ app.get('/api/bulb', (req, res) => {
     res.sendFile(path.join(publicPath, `bulb${status}.jpg`));
 });
 
-// //http://localhost:8080/api/bulboff
-// app.post('/api/bulboff', (req, res) => {
-//     res.sendFile(path.join(publicPath, 'bulbff.jpg'));
-// });
+
 
 
 
