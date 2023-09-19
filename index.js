@@ -73,7 +73,14 @@ app.get('/api/bulb', (req, res) => {
     res.sendFile(path.join(publicPath, `bulb${status}.jpg`));
 });
 
-
+//http://localhost:8080/all-type
+app.post('/all-type/:id/:name', (req, res) => {
+    const param = req.params;
+    const query = req.query;
+    const body = req.body;
+    res.send({ param: param, query: query, body: body });
+})
+//http://localhost:8080/all-type/2/i am param?id=3 &name="i am query"
 
 
 
